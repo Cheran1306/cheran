@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+:root{
+    --textColor:white;
+
+}
+
+.bgVideo{
+   width: 100%;
+   position: fixed;
+   z-index:-1;
+}
+
+header{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: black;
+    height: 50px;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    color: var(--textColor);
+}
+
+.headerCenter ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.headerCenter a{
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+:hover.home{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 4px 2px 4px;   
+}
+:hover.newArrival{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 4px 2px 4px;
+}
+:hover.categories{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 4px 2px 4px;
+}
+:hover.platform{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 4px 2px 4px;
+}
+:hover.preBook{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 4px 2px 4px;
+}
+:hover.cart{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 4px 2px 4px;
+}
+
+.headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.headerRight .searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: beige;
+    border-radius: 5px;
+    height: 30px;   
+    width: 210px;
+}
+.headerRight .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: beige;
+    border-radius: 5px;
+    height: 30px;
+    width: 75px;
+}
+.headerRight input{
+    text-align: start;
+    background: none;
+    border:none;
+
+}
+
+.cartBtn{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+}
+
+.title1{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.title1 a{
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.contentTitle{
+    display: flex;
+    gap: 30px;
+    padding: 0px 30px;
+}
+
+.cardFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price{
+    display: block;
+    font-weight: bold;
+}
+
+.cardBtn{
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 29px 0px;
+}
+
+:hover.cards{
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: transform .3s ease;
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.8.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.view{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
